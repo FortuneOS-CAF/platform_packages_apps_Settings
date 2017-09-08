@@ -1,0 +1,2 @@
+# FortuneCraft
+-keep class org.fortune.craft.**

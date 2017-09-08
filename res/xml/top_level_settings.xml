@@ -21,6 +21,14 @@
     android:key="top_level_settings">
 
     <com.android.settings.widget.HomepagePreference
+        android:fragment="org.fortune.craft.FortuneCraft"
+        android:icon="@drawable/ic_fortune_craft"
+        android:key="top_level_craft"
+        android:order="-155"
+        android:title="@string/craft_title"
+        android:summary="@string/craft_summary"/>
+
+    <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
         android:icon="@drawable/ic_settings_wireless"
         android:key="top_level_network"

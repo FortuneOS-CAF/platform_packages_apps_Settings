@@ -21,6 +21,20 @@
     android:key="top_level_settings">
 
     <PreferenceCategory
+        android:order="-145"
+        android:key="top_level_craft_category"
+        android:layout="@layout/settingslib_preference_category_no_title">
+        <com.android.settings.widget.HomepagePreference
+            android:fragment="org.fortune.craft.FortuneCraft"
+            android:icon="@drawable/ic_fortune_craft_filled"
+            android:key="top_level_craft"
+            android:order="-160"
+            android:title="@string/craft_title"
+            android:summary="@string/craft_summary"
+            settings:highlightableMenuKey="@string/menu_key_craft"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:order="-140"
         android:key="top_level_account_category"
         android:layout="@layout/settingslib_preference_category_no_title">

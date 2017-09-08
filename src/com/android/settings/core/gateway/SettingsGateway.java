@@ -208,6 +208,8 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
+import org.fortune.craft.FortuneCraft;
+
 public class SettingsGateway {
 
     /**
@@ -403,6 +405,7 @@ public class SettingsGateway {
             CellularSecuritySettingsFragment.class.getName(),
             AccessibilityHearingAidsFragment.class.getName(),
             HearingDevicePairingFragment.class.getName(),
+            FortuneCraft.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
