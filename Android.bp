@@ -41,6 +41,9 @@ java_library {
     libs: [
         "app-compat-annotations",
     ],
+    optimize: {
+        proguard_flags_files: ["proguard-core.flags"],
+    },
 }
 
 soong_config_module_type_import {
@@ -75,12 +78,21 @@ android_library {
         "btadva_settings_java_defaults",
     ],
 
-    srcs: ["src/**/*.java", "src/**/*.kt"],
+    srcs: [
+        "src/**/*.java", 
+        "src/**/*.kt",
+        "FortuneCraft/src/**/*.java",
+        "FortuneCraft/src/**/*.kt",
+    ],
+    aaptflags: ["--extra-packages org.fortune.craft"],
+
     resource_dirs: [
         "res",
         "res-export", // for external usage
         "res-product",
+        "FortuneCraft/res",
     ],
+
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
         "androidx.slice_slice-builders",
