@@ -241,15 +241,9 @@ public class TetherPreferenceController extends AbstractPreferenceController imp
             tetherOn = pan != null && pan.isTetheringOn();
         }
         if (!hotSpotOn && !tetherOn) {
-            // Both off
             updateSummaryToOff();
-        } else if (hotSpotOn && tetherOn) {
-            // Both on
-            mPreference.setSummary(R.string.tether_settings_summary_hotspot_on_tether_on);
-        } else if (hotSpotOn) {
-            mPreference.setSummary(R.string.tether_settings_summary_hotspot_on_tether_off);
         } else {
-            mPreference.setSummary(R.string.tether_settings_summary_hotspot_off_tether_on);
+            mPreference.setSummary(R.string.switch_on_text);
         }
     }
 

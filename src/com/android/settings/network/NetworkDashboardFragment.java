@@ -71,8 +71,6 @@ public class NetworkDashboardFragment extends DashboardFragment implements
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-
-        use(AirplaneModePreferenceController.class).setFragment(this);
         getSettingsLifecycle().addObserver(use(AllInOneTetherPreferenceController.class));
     }
 
@@ -117,7 +115,6 @@ public class NetworkDashboardFragment extends DashboardFragment implements
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
 
         controllers.add(new MobileNetworkSummaryController(context, lifecycle, lifecycleOwner));
-        controllers.add(new TetherPreferenceController(context, lifecycle));
         controllers.add(vpnPreferenceController);
         controllers.add(new ProxyPreferenceController(context));
         controllers.add(mobilePlanPreferenceController);
@@ -162,18 +159,6 @@ public class NetworkDashboardFragment extends DashboardFragment implements
             return SettingsEnums.DIALOG_MANAGE_MOBILE_PLAN;
         }
         return 0;
-    }
-
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        switch (requestCode) {
-            case AirplaneModePreferenceController.REQUEST_CODE_EXIT_ECM:
-            case AirplaneModePreferenceController.REQUEST_CODE_EXIT_SCBM:
-                use(AirplaneModePreferenceController.class)
-                        .onActivityResult(requestCode, resultCode, data);
-                break;
-        }
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

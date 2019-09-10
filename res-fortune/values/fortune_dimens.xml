@@ -5,6 +5,11 @@
 -->
 <resources>
 
+     <!-- Toolbar -->
+     <dimen name="fortune_toolbar_height">225dp</dimen>
+     <dimen name="fortune_toolbar_expanded_title_margin_start">21dp</dimen>
+     <dimen name="fortune_toolbar_expanded_title_margin_end">75dp</dimen>
+
      <!-- Preference Card -->
      <dimen name="fortune_pref_card_radius">28dp</dimen>
      <dimen name="fortune_pref_card_radius-outer">5dp</dimen>
@@ -12,9 +17,11 @@
      <dimen name="fortune_pref_card_horizontal_padding">16dp</dimen>
      <dimen name="fortune_pref_card_horizontal_padding-negative">-16dp</dimen>
 
-     <!-- Toolbar -->
-     <dimen name="fortune_toolbar_height">225dp</dimen>
-     <dimen name="fortune_toolbar_expanded_title_margin_start">21dp</dimen>
-     <dimen name="fortune_toolbar_expanded_title_margin_end">75dp</dimen>
+     <!-- Dashboard -->
+     <dimen name="fortune_dashboard_header_height">225dp</dimen>
+
+     <!-- About Phone -->
+     <dimen name="fortune_about_phone_ill_height">275dp</dimen>
+     <dimen name="fortune_about_phone_ill_width">125dp</dimen>
 
 </resources>

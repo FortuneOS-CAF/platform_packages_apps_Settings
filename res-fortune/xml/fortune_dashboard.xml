@@ -8,21 +8,51 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="top_level_settings">
 
-    <Preference
-        android:key="top_level_about_device"
-        android:order="-100"
-        android:title="@string/fortune_dashboard_device"
-        android:summary="@string/summary_placeholder"
-        settings:layout="@layout/fortune_dashboard_phone"
-        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
-        settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="fortune_my_account"
+        android:order="-110"
+        android:layout="@layout/fortune_dashboard_account"/>
 
     <Preference
-        android:key="top_level_network"
-        android:order="-95"
+        android:key="fortune_my_phone"
+        android:order="-105"
+        android:title="@string/fortune_dashboard_device"
+        android:summary="FortuneOS 14.0"
+        android:layout="@layout/fortune_dashboard_phone"
+        settings:controller="com.fortune.preferences.FortuneFullRevisionController"
+        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"/>
+
+    <Preference
+        android:key="top_level_customization"
+        android:order="-100"
+        android:title="@string/customization_title"
+        settings:layout="@layout/fortune_dashboard_pref_customization"
+        android:fragment="org.fortune.customization.Customization"/>
+
+    <SwitchPreference
+        android:key="airplane_mode"
+        android:title="@string/airplane_mode"
+        android:order="-96"
+        settings:layout="@layout/fortune_dashboard_prefswitch_top"
+        settings:controller="com.android.settings.network.AirplaneModePreferenceController"/>
+
+    <Preference
+        android:fragment="com.android.settings.network.NetworkDashboardFragment"
+        android:key="internet_settings"
         android:title="@string/fortune_dashboard_network"
-        settings:layout="@layout/fortune_dashboard_pref_top"
-        android:fragment="com.android.settings.network.NetworkDashboardFragment"/>
+        android:summary="@string/summary_placeholder"
+        android:order="-95"
+        settings:layout="@layout/fortune_dashboard_pref_mid"
+        settings:keywords="@string/keywords_internet" />
+
+    <Preference
+        android:fragment="com.android.settings.network.tether.TetherSettings"
+        android:key="tether_settings"
+        android:title="@string/fortune_dashboard_portable_hotspot"
+        android:order="-94"
+        android:summary="@string/summary_placeholder"
+        settings:layout="@layout/fortune_dashboard_pref_mid"
+        settings:keywords="@string/keywords_hotspot_tethering" />
 
     <Preference
         android:key="top_level_connected_devices"
@@ -30,13 +60,6 @@
         android:title="@string/fortune_dashboard_conectivity"
         settings:layout="@layout/fortune_dashboard_pref_bot"
         android:fragment="com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment"/>
-
-    <Preference
-        android:key="top_level_customization"
-        android:order="-86"
-        android:title="@string/customization_title"
-        settings:layout="@layout/fortune_dashboard_pref_sin"
-        android:fragment="org.fortune.customization.Customization"/>
 
     <Preference
         android:key="top_level_display"
@@ -102,12 +125,11 @@
         android:fragment="com.android.settings.location.LocationSettings"/>
 
     <Preference
-        android:key="top_level_security"
+        android:key="top_level_safety_center"
         android:order="-35"
         android:title="@string/fortune_dashboard_security"
         settings:layout="@layout/fortune_dashboard_pref_bot"
-        android:fragment="com.android.settings.security.SecuritySettings"
-        settings:controller="com.android.settings.security.TopLevelSecurityEntryPreferenceController"/>
+        settings:controller="com.android.settings.safetycenter.TopLevelSafetyCenterEntryPreferenceController"/>
 
     <Preference
         android:key="top_level_accessibility"

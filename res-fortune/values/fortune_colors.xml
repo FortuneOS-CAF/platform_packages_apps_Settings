@@ -11,5 +11,8 @@
      <color name="fortune_pref_card_opaque">#33FFFFFF</color>
      <color name="fortune_background1">@android:color/system_neutral1_50</color>
      <color name="fortune_background2">@android:color/system_neutral1_100</color>
+     <color name="fortune_dashboard_header_color">@color/fortune_base_layout_header</color>
+     <color name="fortune_clock_bg">@android:color/system_accent1_50</color>
+     <color name="fortune_clock_color">@android:color/system_accent1_800</color>
 
 </resources>
