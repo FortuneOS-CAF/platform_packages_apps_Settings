@@ -47,4 +47,7 @@
     <string name="hide_navbar_gesture_bar_title">Hide gesture bar</string>
     <string name="hide_navbar_gesture_bar_summary">Hide the gesture bar at the bottom of the screen</string>
 
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
+    <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
 </resources>
