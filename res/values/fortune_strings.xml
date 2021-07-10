@@ -11,4 +11,7 @@
     <!--Fortune Keeper -->
     <string name="maintainer">Fortune Keeper</string>
 
+    <!-- CLO Revision -->
+    <string name="clo_revision">CLO revision</string>
+
 </resources>
