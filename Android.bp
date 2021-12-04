@@ -131,6 +131,7 @@ android_library {
         "SystemUIUnfoldLib",
         "kotlin-stdlib",
         "VendorSupport-preference",
+        "accountfeatureprovidergoogle",
     ],
 
     plugins: ["androidx.room_room-compiler-plugin"],
@@ -195,4 +196,10 @@ filegroup {
 filegroup {
     name: "Settings_manifest",
     srcs: ["AndroidManifest.xml"],
+}
+
+java_import {
+    name: "accountfeatureprovidergoogle",
+    jars: ["libs/accountfeatureprovidergoogle.jar"],
+    sdk_version: "current",
 }
