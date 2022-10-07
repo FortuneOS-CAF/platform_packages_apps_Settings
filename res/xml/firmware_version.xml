@@ -30,6 +30,14 @@
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
+    <!-- FortuneOS version -->
+    <Preference
+        android:key="fortune_version"
+        android:title="@string/fortune_version_title"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.FortuneVersionPreferenceController"/>
+
     <!-- Security patch -->
     <Preference
         android:key="security_key"
