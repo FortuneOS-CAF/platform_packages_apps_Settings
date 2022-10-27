@@ -117,6 +117,13 @@
         settings:controller="com.android.settings.display.TopLevelWallpaperPreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
+        android:fragment="org.fortune.customization.Customization"
+        android:icon="@drawable/ic_customization"
+        android:key="top_level_customization"
+        android:order="-65"
+        android:title="@string/customization_title"/>
+
+    <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.accessibility.AccessibilitySettings"
         android:icon="@drawable/ic_settings_accessibility"
         android:key="top_level_accessibility"
