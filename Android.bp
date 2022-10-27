@@ -56,16 +56,20 @@ android_library {
     srcs: [
         "src/**/*.java",
         "src/**/*.kt",
+        "FortuneCraft/src/**/*.java",
+        "FortuneCraft/src/**/*.kt",
     ],
     exclude_srcs: [
         "src/com/android/settings/biometrics/fingerprint2/lib/**/*.kt",
     ],
     use_resource_processor: true,
+    aaptflags: ["--extra-packages org.fortune.craft"],
     resource_dirs: [
         "res",
         "res-export", // for external usage
         "res-fortune",
         "res-product",
+        "FortuneCraft/res",
     ],
     static_libs: [
         // External dependencies

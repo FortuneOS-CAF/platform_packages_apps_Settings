@@ -536,4 +536,7 @@ public class Settings extends SettingsActivity {
 
     public static class HearingDevicesActivity extends SettingsActivity { /* empty */ }
     public static class HearingDevicesPairingActivity extends SettingsActivity { /* empty */ }
+
+    // FortuneCraft Additoon
+    public static class FortuneCraftActivity extends SettingsActivity {}
 }

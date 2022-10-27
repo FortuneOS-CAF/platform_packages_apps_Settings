@@ -52,6 +52,8 @@ import com.android.settingslib.drawer.CategoryKey;
 
 import java.util.Map;
 
+import org.fortune.craft.FortuneCraft;
+
 /**
  * A registry to keep track of which page hosts which category.
  */
@@ -132,6 +134,8 @@ public class DashboardFragmentRegistry {
                 CategoryKey.CATEGORY_SPECIAL_APP_ACCESS);
         PARENT_TO_CATEGORY_KEY_MAP.put(MoreSecurityPrivacyFragment.class.getName(),
                 CategoryKey.CATEGORY_MORE_SECURITY_PRIVACY_SETTINGS);
+        PARENT_TO_CATEGORY_KEY_MAP.put(FortuneCraft.class.getName(),
+                 FortuneCraft.CATEGORY_KEY);
 
         CATEGORY_KEY_TO_PARENT_MAP = new ArrayMap<>(PARENT_TO_CATEGORY_KEY_MAP.size());
 
