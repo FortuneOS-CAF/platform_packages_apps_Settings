@@ -17,4 +17,10 @@
     <string name="refresh_rate_footer">A higher refresh rate makes the display smoother, but increases power consumption</string>
     <string name="keywords_refresh_rate">refresh, rate, smooth, peak, 60hz, 90hz, 120hz, 144hz, 165hz</string>
 
+    <!-- Ambient wake -->
+    <string name="doze_gesture_ambient_title">Show Ambient</string>
+    <string name="doze_gesture_ambient_summary">Show Ambient Display instead of fully waking the screen up</string>
+    <string name="gesture_wake_ambient">Show Ambient</string>
+    <string name="gesture_wake">Fully wake</string>
+
 </resources>
