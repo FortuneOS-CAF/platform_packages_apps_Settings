@@ -39,4 +39,12 @@
     <string name="fortune_dashboard_wellbeing">Digital Wellbeing</string>
     <string name="fortune_dashboard_support">Support</string>
 
+    <!-- Firmware info -->
+    <string name="fortune_firmware_info">Firmware information</string>
+
+    <!-- Preferences Category -->
+    <string name="fortune_firmware_version_cat">Firmware version</string>
+    <string name="fortune_firmware_security_cat">Firmware security</string>
+    <string name="fortune_general_cat">General</string>
+
 </resources>
