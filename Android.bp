@@ -78,11 +78,13 @@ android_library {
     srcs: [
            "src/**/*.java", 
            "src/**/*.kt",
+           "src-fortune/**/*.java",
            "Customization/src/**/*.java",
     ],
     resource_dirs: [
         "res",
         "res-export", // for external usage
+        "res-fortune",
         "res-product",
         "Customization/res"
     ],

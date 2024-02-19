@@ -84,7 +84,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
 
     @Override
     protected int getPreferenceScreenResId() {
-        return R.xml.top_level_settings;
+        return R.xml.fortune_dashboard;
     }
 
     @Override
@@ -215,6 +215,17 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
                 icon.setTint(tintColor);
             }
         });
+        // FortuneOS Dashboard
+        for (int i = 0; i < getPreferenceScreen().getPreferenceCount(); i++) {
+            Preference pref = getPreferenceScreen().getPreference(i);
+            if (pref.isVisible() && pref.getTitle() != null && 
+                pref.getLayoutResource() != R.layout.fortune_dashboard_pref_top &&
+                pref.getLayoutResource() != R.layout.fortune_dashboard_pref_sin &&
+                pref.getLayoutResource() != R.layout.fortune_dashboard_pref_bot &&
+                pref.getLayoutResource() != R.layout.fortune_dashboard_phone ) {
+                pref.setLayoutResource(R.layout.fortune_dashboard_pref_mid);
+            }
+        }
     }
 
     @Override

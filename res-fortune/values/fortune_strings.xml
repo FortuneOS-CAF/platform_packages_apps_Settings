@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 FortuneOS
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Dashboard -->
+    <string name="fortune_dashboard_device">About phone</string>
+    <string name="fortune_dashboard_account">Account</string>
+    <string name="fortune_dashboard_account_summary">Manage all user profile available in this device here</string>
+    <string name="fortune_dashboard_network">Connectivity</string>
+    <string name="fortune_dashboard_portable_hotspot">Portable hotspot</string>
+    <string name="fortune_dashboard_conectivity">Devices</string>    
+    <string name="fortune_dashboard_display">Display</string>
+    <string name="fortune_dashboard_battery">Battery</string>
+    <string name="fortune_dashboard_sound">Sound</string>
+    <string name="fortune_dashboard_apps">Apps</string>
+    <string name="fortune_dashboard_notif">Notifications</string>
+    <string name="fortune_dashboard_storage">Storage</string>
+    <string name="fortune_dashboard_privacy">Privacy</string>    
+    <string name="fortune_dashboard_location">Location</string>
+    <string name="fortune_dashboard_security">Security</string>
+    <string name="fortune_dashboard_accessibility">Accessibility</string>
+    <string name="fortune_dashboard_system">Other</string>    
+    <string name="fortune_dashboard_wellbeing">Digital Wellbeing</string>
+    <string name="fortune_dashboard_support">Support</string>
+
+</resources>
