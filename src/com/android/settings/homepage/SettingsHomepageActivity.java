@@ -47,6 +47,7 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Toolbar;
+import android.widget.TextView;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.core.graphics.Insets;
@@ -78,6 +79,8 @@ import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import java.net.URISyntaxException;
 import java.util.Set;
+import java.util.*;
+import java.lang.*;
 
 /** Settings homepage activity */
 public class SettingsHomepageActivity extends FragmentActivity implements
@@ -225,6 +228,14 @@ public class SettingsHomepageActivity extends FragmentActivity implements
                         .getLayoutTransition().enableTransitionType(LayoutTransition.CHANGING);
             }
         }
+        // FortuneOS Dashboard
+        // Generate random welcome massage as title header
+        final TextView textView = findViewById(R.id.homepage_title);
+        String[] msg = getResources().getStringArray(R.array.fortune_dashboard_greet);
+        Random genmsg = new Random();
+        int  n = genmsg.nextInt(msg.length-1);
+        textView.setText(msg[n]);
+
         mMainFragment = showFragment(() -> {
             final TopLevelSettings fragment = new TopLevelSettings();
             fragment.getArguments().putString(SettingsActivity.EXTRA_FRAGMENT_ARG_KEY,

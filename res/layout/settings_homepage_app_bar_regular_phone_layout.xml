@@ -35,8 +35,8 @@
 
     <TextView
         android:id="@+id/homepage_title"
-        android:text="@string/settings_label"
-        style="@style/HomepageTitleText"/>
+        android:text="@strings/settings_label"
+        style="@style/fortune_dashboard_header_title"/>
 
     <FrameLayout
         android:id="@+id/suggestion_content"

@@ -6,6 +6,19 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Dashboard -->
+    <string name="fortune_dashboard_greet_default">What are you looking for?</string>
+    <string name="fortune_dashboard_greet1">What are you looking for?</string>
+    <string name="fortune_dashboard_greet2">Looking for something?</string>
+    <string name="fortune_dashboard_greet3">Need to change anything?</string>
+    <string name="fortune_dashboard_greet4">Search for something?</string>
+    <string name="fortune_dashboard_greet5">Need anything?</string>
+    <string name="fortune_dashboard_greet6">Let\'s do something cool</string>
+    <string name="fortune_dashboard_greet7">Got something to change?</string>
+    <string name="fortune_dashboard_greet8">Say hi, to the world?</string>
+    <string name="fortune_dashboard_greet9">Hi, welcome to FortuneOS</string>
+    <string name="fortune_dashboard_greet10">Tweak your device here!</string>
+    <string name="fortune_dashboard_greet11">Try to find something?</string>
+    <string name="fortune_dashboard_greet12">Hey, There i\'am using FortuneOS</string>
     <string name="fortune_dashboard_device">About phone</string>
     <string name="fortune_dashboard_account">Account</string>
     <string name="fortune_dashboard_account_summary">Manage all user profile available in this device here</string>
