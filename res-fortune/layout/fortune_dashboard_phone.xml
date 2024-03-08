@@ -32,6 +32,15 @@
             app:cardCornerRadius="@dimen/fortune_pref_card_radius"
             app:cardElevation="0dp">
 
+            <com.fortune.widget.WallpaperView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.1"
+                android:scaleType="centerCrop"
+                android:elevation="0dp"
+                android:gravity="center"
+                android:orientation="vertical" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
