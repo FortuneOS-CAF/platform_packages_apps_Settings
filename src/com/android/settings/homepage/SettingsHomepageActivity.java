@@ -406,6 +406,8 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         // Hide the homepage for preparing the suggestion. If scrolling is needed, the list views
         // should be initialized in the invisible homepage view to prevent a scroll flicker.
         mHomepageView.setVisibility(scrollNeeded ? View.INVISIBLE : View.GONE);
+        // Hide the homepage for preparing the suggestion.
+        mHomepageView.setVisibility(View.GONE);
         // Schedule a timer to show the homepage and hide the suggestion on timeout.
         mHomepageView.postDelayed(() -> showHomepageWithSuggestion(false),
                 HOMEPAGE_LOADING_TIMEOUT_MS);
