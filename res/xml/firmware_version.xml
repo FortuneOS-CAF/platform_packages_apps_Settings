@@ -21,6 +21,11 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+    <!-- fortuneOS header -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="fortune_header"
+        android:layout="@layout/fortune_header"/>
+
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
