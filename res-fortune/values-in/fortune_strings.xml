@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 FortuneOS
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Dashboard -->
+    <string name="fortune_dashboard_greet_default">Apa yang sedang Anda cari?</string>
+    <string name="fortune_dashboard_greet1">Apa yang sedang Anda cari?</string>
+    <string name="fortune_dashboard_greet2">Mencari sesuatu?</string>
+    <string name="fortune_dashboard_greet3">Perlu mengubah sesuatu?</string>
+    <string name="fortune_dashboard_greet4">Mencari sesuatu?</string>
+    <string name="fortune_dashboard_greet5">Butuh sesuatu?</string>
+    <string name="fortune_dashboard_greet6">Ayo lakukan sesuatu yang keren</string>
+    <string name="fortune_dashboard_greet7">Madosi nopo nggeh?</string>
+    <string name="fortune_dashboard_greet8">Naon anu anjeun pilarian sobat?</string>
+    <string name="fortune_dashboard_greet9">He rek! badhe madosi nopo?</string>
+    <string name="fortune_dashboard_greet10">Halo! Sugeng rawuh ing fortuneOS</string>
+    <string name="fortune_dashboard_greet11">Apo yang ang cari?</string>
+    <string name="fortune_dashboard_greet12">Wilujeng sumping ka fortuneOS</string>
+
+</resources>

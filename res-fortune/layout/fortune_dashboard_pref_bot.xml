@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 FortuneOS
+     SPDX-License-Identifier: Apache-2.0
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    style="@style/fortuneDashboardPrefBot"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <include
+        layout="@layout/fortune_dashboard_pref"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

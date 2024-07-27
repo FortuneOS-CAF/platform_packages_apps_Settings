@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 FortuneOS
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+     <string-array name="fortune_dashboard_greet">
+          <item>@string/fortune_dashboard_greet1</item>
+          <item>@string/fortune_dashboard_greet2</item>
+          <item>@string/fortune_dashboard_greet3</item>
+          <item>@string/fortune_dashboard_greet4</item>
+          <item>@string/fortune_dashboard_greet5</item>
+          <item>@string/fortune_dashboard_greet6</item>
+          <item>@string/fortune_dashboard_greet7</item>
+          <item>@string/fortune_dashboard_greet8</item>
+          <item>@string/fortune_dashboard_greet9</item>
+          <item>@string/fortune_dashboard_greet10</item>
+          <item>@string/fortune_dashboard_greet11</item>
+          <item>@string/fortune_dashboard_greet12</item>
+     </string-array>
+
+</resources>
