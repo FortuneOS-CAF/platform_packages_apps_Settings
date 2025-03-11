@@ -64,6 +64,7 @@ android_library {
     resource_dirs: [
         "res",
         "res-export", // for external usage
+        "res-fortune",
         "res-product",
     ],
     static_libs: [
