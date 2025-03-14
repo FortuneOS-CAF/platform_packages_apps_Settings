@@ -25,9 +25,13 @@ import android.content.Intent;
 import android.content.pm.UserInfo;
 import android.os.Bundle;
 import android.os.UserManager;
+import android.view.LayoutInflater;
+import android.view.ViewGroup;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.View;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.settings.R;
 import com.android.settings.Utils;
@@ -93,6 +97,22 @@ public class MyDeviceInfoFragment extends DashboardFragment
     @Override
     public int getMetricsCategory() {
         return SettingsEnums.DEVICEINFO;
+    }
+
+    @Override
+    public RecyclerView onCreateRecyclerView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        RecyclerView recyclerView = super.onCreateRecyclerView(inflater, container, savedInstanceState);
+        GridLayoutManager layoutManager = new GridLayoutManager(getActivity(), 2);
+    
+        layoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+            @Override
+            public int getSpanSize(int position) {
+                return (position == 1 || position == 2) ? 1 : 2;
+            }
+        });
+
+        recyclerView.setLayoutManager(layoutManager);
+        return recyclerView;
     }
 
     @Override

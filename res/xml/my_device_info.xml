@@ -21,13 +21,35 @@
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings">
 
-    <PreferenceScreen
+    <com.android.settingslib.widget.LayoutPreference
         android:key="fortune_about_header"
+        android:order="-999"
         android:layout="@layout/fortune_about_header"
         android:selectable="false" />
 
-    <PreferenceScreen
+    <com.android.settings.widget.ValidatedEditTextPreference
+        android:icon="@drawable/ic_device"
+        android:title="@string/my_device_info_device_name_preference_title"
+        android:key="device_name"
+        android:summary="@string/summary_placeholder"
+        android:order="-3"
+        settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
+        settings:enableCopying="true"
+        settings:layout="@layout/fortune_about_device" />
+
+    <org.fortune.widget.StoragePreference
+        android:title="@string/storage_settings"
+        android:key="storage_info"
+        android:summary="@string/summary_placeholder"
+        android:order="-2"
+        android:fragment="com.android.settings.deviceinfo.StorageDashboardFragment"
+        settings:controller="org.fortune.widget.StoragePreferencesController"
+        settings:enableCopying="true"
+        settings:layout="@layout/fortune_about_storage" />
+
+    <com.android.settingslib.widget.LayoutPreference
         android:key="fortune_about_hwinfo"
+        android:order="-1"
         android:layout="@layout/fortune_about_hwinfo"
         android:selectable="false" />
 
@@ -35,15 +57,6 @@
         android:key="basic_info_category"
         android:selectable="false"
         android:title="@string/my_device_info_basic_info_category_title">
-
-        <!-- Device name -->
-        <com.android.settings.widget.ValidatedEditTextPreference
-            android:key="device_name"
-            android:order="1"
-            android:title="@string/my_device_info_device_name_preference_title"
-            android:summary="@string/summary_placeholder"
-            settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
-            settings:enableCopying="true"/>
 
         <!-- Android version -->
         <Preference
