@@ -5369,6 +5369,48 @@ SPDX-License-Identifier: BSD-3-Clause-Clear -->
              <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                         android:value="true" />
          </activity>
+         <activity android:name="Settings$CraftStatusbarActivity"
+                   android:label="@string/craft_statusbar_title"
+                   android:icon="@drawable/craft_homepage_statusbar"
+                   android:exported="true">
+             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                        android:value="org.fortune.craft.category.Statusbar" />
+         </activity>
+         <activity android:name="Settings$CraftQuicksettingsActivity"
+                   android:label="@string/craft_quicksettings_title"
+                   android:icon="@drawable/craft_homepage_quicksettings"
+                   android:exported="true">
+             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                        android:value="org.fortune.craft.category.QuickSettings" />
+         </activity>
+         <activity android:name="Settings$CraftNavigationActivity"
+                   android:label="@string/craft_navigation_title"
+                   android:icon="@drawable/craft_homepage_navigation"
+                   android:exported="true">
+             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                        android:value="org.fortune.craft.category.Navigation" />
+         </activity>
+         <activity android:name="Settings$CraftLockscreenActivity"
+                   android:label="@string/craft_lockscreen_title"
+                   android:icon="@drawable/craft_homepage_lockscreen"
+                   android:exported="true">
+             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                        android:value="org.fortune.craft.category.LockScreen" />
+         </activity>
+         <activity android:name="Settings$CraftAboutActivity"
+                   android:label="@string/craft_about_title"
+                   android:icon="@drawable/craft_homepage_about"
+                   android:exported="true">
+             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                        android:value="org.fortune.craft.category.About" />
+         </activity>
+         <activity android:name="Settings$CraftMiscActivity"
+                   android:label="@string/craft_misc_title"
+                   android:icon="@drawable/craft_homepage_misc"
+                   android:exported="true">
+             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                        android:value="org.fortune.craft.category.Misc" />
+         </activity>
          <activity android:name="org.fortune.craft.category.ChangelogActivity"
                 android:label="@string/changelog_title"
                 android:theme="@style/Theme.SubSettingsBase"

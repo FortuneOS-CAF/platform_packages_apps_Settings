@@ -407,6 +407,12 @@ public class SettingsGateway {
             AccessibilityHearingAidsFragment.class.getName(),
             HearingDevicePairingFragment.class.getName(),
             FortuneCraft.class.getName(),
+            Statusbar.class.getName(),
+            QuickSettings.class.getName(),
+            Navigation.class.getName(),
+            LockScreen.class.getName(),
+            About.class.getName(),
+            Misc.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -454,5 +460,11 @@ public class SettingsGateway {
             Settings.MemtagPageActivity.class.getName(),
             Settings.NavigationModeSettingsActivity.class.getName(),
             Settings.FortuneCraftActivity.class.getName(),
+            Settings.CraftStatusbarActivity.class.getName(),
+            Settings.CraftQuicksettingsActivity.class.getName(),
+            Settings.CraftNavigationActivity.class.getName(),
+            Settings.CraftLockscreenActivity.class.getName(),
+            Settings.CraftAboutActivity.class.getName(),
+            Settings.CraftMiscActivity.class.getName()
     };
 }

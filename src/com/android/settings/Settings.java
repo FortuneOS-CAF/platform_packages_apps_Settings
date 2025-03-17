@@ -539,4 +539,10 @@ public class Settings extends SettingsActivity {
 
     // FortuneCraft Additoon
     public static class FortuneCraftActivity extends SettingsActivity {}
+    public static class CraftStatusbarActivity extends SettingsActivity {}
+    public static class CraftQuicksettingsActivity extends SettingsActivity {}
+    public static class CraftNavigationActivity extends SettingsActivity {}
+    public static class CraftLockscreenActivity extends SettingsActivity {}
+    public static class CraftAboutActivity extends SettingsActivity {}
+    public static class CraftMiscActivity extends SettingsActivity {}
 }
